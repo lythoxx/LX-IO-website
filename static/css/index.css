@@ -123,14 +123,6 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     }
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-
 /* DROPDOWN */
 .dropdown-menu {
     background-color: #2c3033;
@@ -145,22 +137,6 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     color: azure;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-td, th {
-    border: 1px solid azure;
-    text-align: left;
-    padding: 8px;
-}
-tr:nth-child(even) {
-    background-color: rgba(0,0,0,0.07);
-}
-
-.socialLink[title="Roblox"] #socialLink {
-    width: 75px;
-}
 
 .inline-link {
     color: rgb(180, 190, 233);
