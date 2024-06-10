@@ -30,7 +30,8 @@ a {
 .nav-link {
     position: relative;
     color: azure !important;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     font-weight: 900;
 }
 
@@ -144,4 +145,16 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
 
 .inline-link:hover {
     color: rgb(180, 190, 233);
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        left: -35px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .nav-link {
+        left: -100px;
+    }
 }
