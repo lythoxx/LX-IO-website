@@ -57,27 +57,28 @@
     <section id="archivoNarrow">
         <div class="container px-5 my-5">
             <form id="contactForm" class="g-3 needs-validation" action="https://api.staticForms.xyz/submit" method="post" novalidate>
+                <h2 class="text-center">Contact</h2>
                 <input type="hidden" name="accessKey" value="84a1dc88-3687-48e9-9ba9-0e17ef2c9629">
                 <input type="hidden" name="replyTo" value="@">
                 <input type="text" name="honeypot" style="display:none">
                 <input type="hidden" name="redirectTo" value="https://lxio.dev/home.html">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" required/>
+                    <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" autocomplete="off" tabindex="1" required/>
                     <label for="emailAddress">Email Address</label>
                     <div class="invalid-feedback">Please enter a valid Email adress</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="yourName" type="text" name="name" placeholder="Your name" required/>
+                    <input class="form-control" id="yourName" type="text" name="name" placeholder="Your name" autocomplete="off" tabindex="2" required/>
                     <label for="yourName">Your name</label>
                     <div class="invalid-feedback">Your name is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Subject" required/>
+                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Subject" autocomplete="off" tabindex="3" required/>
                     <label for="subject">Subject</label>
                     <div class="invalid-feedback">Subject is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" style="height: 10rem;" required></textarea>
+                    <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" style="height: 10rem;" autocomplete="off" tabindex="4" required></textarea>
                     <label for="message">Message</label>
                     <div class="invalid-feedback">Message is required.</div>
                 </div>
