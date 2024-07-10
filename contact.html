@@ -11,7 +11,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/cb172610ff.js" crossorigin="anonymous"></script>
-    <script src="static/js/form.js"></script>
+    <script src="static/js/form.js" defer></script>
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/form.css">
     <link rel="icon" href="static/assets/profile.png">
@@ -56,32 +56,30 @@
     <!-- MAIN -->
     <section id="archivoNarrow">
         <div class="container px-5 my-5">
-            <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
+            <form id="contactForm" class="g-3 needs-validation" action="https://api.staticForms.xyz/submit" method="post" novalidate>
                 <input type="hidden" name="accessKey" value="84a1dc88-3687-48e9-9ba9-0e17ef2c9629">
-                <input type="text" name="honeypot" style="display: none;">
-                <input type="hidden" name="redirectTo" value="https://lxio.dev">
                 <input type="hidden" name="replyTo" value="@">
-                <h2>Contact</h2>
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="redirectTo" value="https://lxio.dev/home.html">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" data-sb-validations="required,email" required/>
+                    <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" required/>
                     <label for="emailAddress">Email Address</label>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                    <div class="invalid-feedback">Please enter a valid Email adress</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="yourName" type="text" name="name" placeholder="Your name" data-sb-validations="required" required/>
+                    <input class="form-control" id="yourName" type="text" name="name" placeholder="Your name" required/>
                     <label for="yourName">Your name</label>
-                    <div class="invalid-feedback" data-sb-feedback="yourName:required">Your name is required.</div>
+                    <div class="invalid-feedback">Your name is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Subject" data-sb-validations="required" required/>
+                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Subject" required/>
                     <label for="subject">Subject</label>
-                    <div class="invalid-feedback" data-sb-feedback="subject:required">Subject is required.</div>
+                    <div class="invalid-feedback">Subject is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" style="height: 10rem;" data-sb-validations="required" required></textarea>
+                    <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" style="height: 10rem;" required></textarea>
                     <label for="message">Message</label>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    <div class="invalid-feedback">Message is required.</div>
                 </div>
                 <div class="d-grid">
                     <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>

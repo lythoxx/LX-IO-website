@@ -11,11 +11,10 @@ label {
 }
 
 .form-floating input:focus, .form-floating textarea:focus {
-    background-color: #2c3033;
+    background-color: #3e4245;
     color: azure;
-    border: 1px solid azure;
-    outline: none;
-    box-shadow: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 @media screen and (orientation: landscape) {
