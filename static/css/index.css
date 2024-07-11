@@ -81,7 +81,15 @@ a:hover {
     text-decoration: none;
 }
 
-a:not(.dropdown-toggle, .socialLink, .navbar-brand, .forum-link, .dropdown-content a, .btn):after {
+#hint {
+    color: #eb2020 !important;
+}
+
+.domain.no-underline {
+    color: rgb(204, 204, 59) !important;
+}
+
+a:not(.dropdown-toggle, .socialLink, .navbar-brand, .forum-link, .dropdown-content a, .btn, .no-underline):after {
     content: "";
     position: absolute;
     background-color: currentColor;

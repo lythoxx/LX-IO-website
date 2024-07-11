@@ -8,7 +8,7 @@
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
+                if (!form.checkValidity() || jQuery("#hint").html() !== "") {
                     event.preventDefault()
                     event.stopPropagation()
                 }
@@ -17,3 +17,37 @@
             }, false)
     })
 })()
+
+
+var email = jQuery('#emailAddress');
+var hint = jQuery("#hint");
+
+email.on('blur',function() {
+    hint.css('display', 'none').empty(); // hide hint initially
+    jQuery(this).mailcheck({
+        suggested: function(element, suggestion) {
+            if(!hint.html()) {
+                // misspell - display hint element
+                var suggestion = "Did you mean <span class='suggestion'>" +
+                    "<span class='address'>" + suggestion.address + "</span>"
+                    + "@<a href='#' class='domain no-underline'>" + suggestion.domain +
+                    "</a></span>?";
+
+                hint.html(suggestion).fadeIn(150);
+            } else {
+                // Subsequent errors
+                jQuery(".address").html(suggestion.address);
+                jQuery(".domain").html(suggestion.domain);
+            }
+        }
+    });
+});
+
+hint.on('click', '.domain', function() {
+    // Display with the suggestion and remove the hint
+    email.val(jQuery(".suggestion").text());
+    hint.fadeOut(200, function() {
+        jQuery(this).empty();
+    });
+    return false;
+});
