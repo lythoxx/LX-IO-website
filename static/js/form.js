@@ -31,7 +31,7 @@ email.on('blur',function() {
                 var suggestion = "Did you mean <span class='suggestion'>" +
                     "<span class='address'>" + suggestion.address + "</span>"
                     + "@<a href='#' class='domain no-underline'>" + suggestion.domain +
-                    "</a></span>?";
+                    "</a></span>? <a href='#' class='no-underline' id='dismiss'>No</a>";
 
                 hint.html(suggestion).fadeIn(150);
             } else {
@@ -46,6 +46,14 @@ email.on('blur',function() {
 hint.on('click', '.domain', function() {
     // Display with the suggestion and remove the hint
     email.val(jQuery(".suggestion").text());
+    hint.fadeOut(200, function() {
+        jQuery(this).empty();
+    });
+    return false;
+});
+
+hint.on('click', '#dismiss', function() {
+    // Dismiss the suggestion
     hint.fadeOut(200, function() {
         jQuery(this).empty();
     });
