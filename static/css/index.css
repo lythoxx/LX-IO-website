@@ -158,3 +158,11 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
         left: -100px;
     }
 }
+
+.offcanvas {
+    background-color: #222324;
+}
+
+.btn-close {
+    background-color: azure !important;
+}

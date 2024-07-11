@@ -59,14 +59,94 @@
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
                             <h1 class="display-4">Marcus Voice Assistant</h1>
-                            <p class="lead">Marcus is a voice activated AI assistant, using tools from <a class="inline-link" href="https://openai.com" target="_blank">OpenAI</a> and <a class="inline-link" target="_blank" href="https://azure.microsoft.com">Micrsoft Azure</a>.</p>
-                            <p class="lead">What sets it apart from other voice assistants is, that it implements <a class="inline-link" href="https://chat.openai.com" target="_blank">ChatGPT</a> for behavior that isn't pre-defined (i.e. asking for the weather or playing music). It uses requests to <a class="inline-link" href="https://chat.openai.com" target="_blank">ChatGPT</a> instead of making requests to any search engine or other website. That way results can vary in wording and even explained afterwards, simply by asking Marcus to explain further.</p>
+                            <p class="lead">Marcus is a voice activated AI assistant, using tools from <a class="inline-link" data-bs-toggle="offcanvas" href="#openai" role="button" aria-controls="openai">OpenAI</a> and <a class="inline-link" target="_blank" data-bs-toggle="offcanvas" href="#azure" role="button" aria-controls="azure">Micrsoft Azure</a>.</p>
+                            <p class="lead">What sets it apart from other voice assistants is, that it implements <a class="inline-link" data-bs-toggle="offcanvas" href="#chatgpt" role="button" aria-controls="chatgpt">ChatGPT</a> for behavior that isn't pre-defined (i.e. asking for the weather or playing music). It uses requests to <a class="inline-link" data-bs-toggle="offcanvas" href="#chatgpt" role="button" aria-controls="chatgpt">ChatGPT</a> instead of making requests to any search engine or other website. That way results can vary in wording and even explained afterwards, simply by asking Marcus to explain further.</p>
                             <p class="lead">Marcus will be able to do everything an assistant should be able to do: he will play music, tell you the weather, set alarms for you and more!</p>
-                            <p class="lead">He features a realistic voice using <a class="inline-link" href="https://openai.com" target="_blank">OpenAI</a>'s Text-To-Speech model.</p>
+                            <p class="lead">He features a realistic voice using <a class="inline-link" data-bs-toggle="offcanvas" href="#openai" role="button" aria-controls="openai">OpenAI</a>'s Text-To-Speech model.</p>
                             <p class="lead">Conversations are saved for up to an hour to really get a feeling of having a conversation.</p>
                             <p class="lead">Simply say "Marcus" and start talking!</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="openai" aria-labelledby="openaiLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="openai">OpenAI</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="lead">OpenAI is an AI-research company known for their development of ChatGPT.</p>
+                    <hr>
+                    <p>Notable work</p>
+                    <ul>
+                        <li>ChatGPT 4o</li>
+                            <ul><li>ChatGPT 4o is the newest version of ChatGPT. It is able to take input from video, audio, text and files.</li></ul>
+                        <li>DALL•E3</li>
+                            <ul><li>DALL•E3 is their latest image generation model capable of understanding even finer nuances and details than previous versions.</li></ul>
+                        <li>Sora</li>
+                            <ul><li>Sora is an AI model that can create realistic and imaginative scenes from text instructions.</li></ul>
+                    </ul>
+                    <a href="https://openai.com" target="_blank" class="btn btn-secondary">Visit OpenAI</a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="chatgpt" aria-labelledby="chatgptLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="chatgpt">ChatGPT</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="lead">ChatGPT is an AI-text-model developed by OpenAI. The latest version is ChatGPT 4o.</p>
+                    <hr>
+                    <ul>
+                        <li>Understanding human speech</li>
+                            <ul><li>ChatGPT is capable of understanding and interpreting human speech in multiple different languages and dialects.</li></ul>
+                        <li>Replicating human speech</li>
+                            <ul><li>ChatGPT is able to replicate human speech to the degree that it can use dialects and informal language as well as talk in other languages.</li></ul>
+                        <li>Context</li>
+                            <ul><li>ChatGPT takes the context from your conversation to be able to give you the best possible answer.</li></ul>
+                        <li>Knowledge</li>
+                            <ul><li>ChatGPT's knowledge base goes up to October 2023 in its latest version from May 2024</li></ul>
+                    </ul>
+                    <a href="https://chatgpt.com" target="_blank" class="btn btn-secondary">Check out ChatGPT</a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="azure" aria-labelledby="azureLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="azure">Microsoft Azure</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="lead">Microsoft Azure is a comprehensive cloud computing platform offering a wide range of services including data management, audio processing, and AI capabilities.</p>
+                    <hr>
+                    <ul>
+                        <li>Virtual Machines</li>
+                            <ul><li>Deploy and manage VMs of various configurations to suit different workloads</li></ul>
+                        <li>Azure Kubernetes Service (AKS)</li>
+                            <ul><li>Simplify the deployment, management and operations of Kubernetes</li></ul>
+                        <li>Azure SQL Database</li>
+                            <ul><li>Fully managed relational database with auto-scale, integral intelligence, and robust security.</li></ul>
+                        <li>Azure Active Directory (AAD)</li>
+                            <ul><li>Cloud-based identity and access management service.</li></ul>
+                        <li>Azure Functions</li>
+                            <ul><li>Event-driven, serverless compute platform that can solve complex orchestration problems.</li></ul>
+                        <li>Azure Cognitive Services</li>
+                            <ul><li>Suite of AI services and cognitive APIs to build intelligent apps.</li></ul>
+                        <li>Azure DevOps Services</li>
+                            <ul><li>Offer development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing.</li></ul>
+                        <li>Azure IoT Hub</li>
+                            <ul><li>Centralized hub to connect, monitor, and manage billions of IoT assets.</li></ul>
+                        <li>Azure Blockchain Service</li>
+                            <ul><li>Simplify the formation, management, and governance of consortium blockchain networks.</li></ul>
+                        <li>Azure Machine Learning</li>
+                            <ul><li>Cloud-based environment for training, deploying, automated machine learning, and tracking ML models.</li></ul>
+                    </ul>
+                    <a href="https://azure.microsoft.com" target="_blank" class="btn btn-secondary">Visit Microsoft Azure</a>
                 </div>
             </div>
         </div>
@@ -90,7 +170,7 @@
                     <li class="me-3"><a id="archivoNarrow" class="footerItemsCustom text-link contacttab" href="../contact.html">Contact</a></li>
                 </ol>
                 <div class="col-md-4 d-flex align-items-center">
-                    <span>© lythox 2024</span>
+                    <span>© LX-IO 2024</span>
                 </div>
             </footer>
         </div>
