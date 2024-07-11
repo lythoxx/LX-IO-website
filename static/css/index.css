@@ -166,3 +166,23 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
 .btn-close {
     background-color: azure !important;
 }
+
+/* Target the specific container where you want the scrollbar to be visible */
+::-webkit-scrollbar {
+    display: block; /* This attempts to make the scrollbar visible */
+    width: 12px; /* Example width */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey; /* Example thumb color */
+    border-radius: 10px; /* Example thumb border radius */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: grey; /* Example thumb color on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #2c3033; /* Example track color */
+    border-radius: 10px;
+}
