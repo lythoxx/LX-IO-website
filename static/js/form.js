@@ -8,13 +8,6 @@
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
-                if (jQuery("#hint").html() !== "") {
-                    event.preventDefault()
-                    event.stopPropagation()
-                    jQuery('#emailAddress').addClass('is-invalid')
-                    jQuery('#emailFeedback').html('Please correct the email address')
-                    jQuery('#emailAdress').reportValidity()
-                }
                 if (!form.checkValidity() || jQuery("#hint").html() !== "") {
                     event.preventDefault()
                     event.stopPropagation()
@@ -27,7 +20,6 @@
 
 var email = jQuery('#emailAddress');
 var hint = jQuery("#hint");
-var feedback = jQuery('#emailFeedback');
 
 email.on('blur',function() {
     hint.css('display', 'none').empty(); // hide hint initially
@@ -55,7 +47,6 @@ hint.on('click', '.domain', function() {
     email.val(jQuery(".suggestion").text());
     hint.fadeOut(200, function() {
         jQuery(this).empty();
-        jQuery('#emailAddress').removeClass('is-invalid')
     });
     return false;
 });
@@ -64,7 +55,6 @@ hint.on('click', '#dismiss', function() {
     // Dismiss the suggestion
     hint.fadeOut(200, function() {
         jQuery(this).empty();
-        jQuery('#emailAddress').removeClass('is-invalid')
     });
     return false;
 });
