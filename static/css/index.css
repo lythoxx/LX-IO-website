@@ -89,7 +89,7 @@ a:hover {
     color: rgb(204, 204, 59) !important;
 }
 
-a:not(.dropdown-toggle, .socialLink, .navbar-brand, .forum-link, .dropdown-content a, .btn, .no-underline):after {
+a:not(.dropdown-toggle, .socialLink, .navbar-brand, .dropdown-content a, .btn, .no-underline):after {
     content: "";
     position: absolute;
     background-color: currentColor;
