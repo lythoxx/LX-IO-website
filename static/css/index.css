@@ -167,12 +167,37 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     }
 }
 
-.offcanvas {
+.offcanvas, .card {
     background-color: #222324;
 }
 
+
 .btn-close {
     background-color: azure !important;
+}
+
+.row.projects {
+    /* center the row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    overflow: hidden;
+    display: inline-block;
+    border: none;
+}
+
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 16/9;
+    transition: transform 0.2s ease-in;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
 }
 
 /* Target the specific container where you want the scrollbar to be visible */
