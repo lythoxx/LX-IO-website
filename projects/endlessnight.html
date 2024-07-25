@@ -64,8 +64,19 @@
                             <p class="lead">A mobile version is not planned.</p>
                             <p class="lead">The game will feature <a class="inline-link" href="#celeste" role="button" data-bs-toggle="offcanvas" aria-controls="celeste">Celeste</a>-like movement as well as combat against multiple different enemies, a story and self-composed music. The game is composed of multiple different levels, each a few minutes length. It is planned to be about 4-5 hours of gameplay.</p>
                             <hr>
-                            <p class="lead">Endless Night is set in the year 874. The kingdom of Thalindor lies on the edge of despair as its economy collapsed and dark forces are trying to seize power of it. After the king himself called you to his aid, you assume the role of Fae, a skilled knight known throughout the lands and make your way to Thalindor, to stop the evil forces threatening to destroy Thalindor.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="../static/assets/endlessnightssbig.png" class="d-block mx-lg-auto img-fluid rounded page-body" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About the Game</h1>
+                        <p class="lead">Endless Night is set in the year 874. The kingdom of Thalindor lies on the edge of despair as its economy collapsed and dark forces are trying to seize power of it. After the king himself called you to his aid, you assume the role of Fae, a skilled knight known throughout the lands and make your way to Thalindor, to stop the evil forces threatening to destroy Thalindor.</p>
                     </div>
                 </div>
             </div>
@@ -154,6 +165,12 @@
             </footer>
         </div>
     </section>
-
+    <script src="../static/js/zoom.js"></script>
+    <script>
+        document.querySelector( '.page-body' ).addEventListener( 'click', function( event ) {
+            event.preventDefault();
+            zoom.to({ element: event.target });
+        } );
+    </script>
 </body>
 </html>

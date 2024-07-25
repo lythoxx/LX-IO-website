@@ -196,6 +196,10 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     transform: scale(1.1);
 }
 
+img.page-body {
+    cursor: pointer;
+}
+
 /* Target the specific container where you want the scrollbar to be visible */
 ::-webkit-scrollbar {
     display: block; /* This attempts to make the scrollbar visible */
