@@ -176,17 +176,13 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     background-color: azure !important;
 }
 
-.row.projects {
-    /* center the row */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card {
+    margin: 0 auto 1rem auto;
 }
-
 
 .card {
     overflow: hidden;
-    display: inline-block;
+    /* display: inline-block; */
     border: none;
 }
 
