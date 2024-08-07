@@ -167,8 +167,12 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     }
 }
 
-.offcanvas, .card {
-    background-color: #222324;
+.offcanvas {
+    background-color: #2a2a2b;
+}
+
+.card {
+    background-color: #383839;
 }
 
 
@@ -178,22 +182,15 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
 
 .card {
     margin: 0 auto 1rem auto;
-}
-
-.card {
     overflow: hidden;
     /* display: inline-block; */
     border: none;
+    transition: transform 0.2s ease;
 }
 
-.card-img-top {
-    width: 100%;
-    aspect-ratio: 16/9;
-    transition: transform 0.2s ease-in;
-}
-
-.card-img-top:hover {
-    transform: scale(1.1);
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 img.page-body {
@@ -237,6 +234,7 @@ img.page-body {
 .hidden-content {
     position: absolute;
     visibility: hidden;
+    display: none;
     opacity: 0;
     height: 0;
     width: 0;
@@ -244,6 +242,7 @@ img.page-body {
 }
 
 .hidden-content.show {
+    display: block;
     position: relative;
     visibility: visible;
     opacity: 1;
@@ -253,4 +252,12 @@ img.page-body {
 
 .cover-container.hidden-content {
     position:absolute;
+}
+
+.card-icon {
+    transition: transform 0.2s ease;
+}
+
+.card-icon:hover {
+    transform: scale(1.2) rotate(360deg);
 }

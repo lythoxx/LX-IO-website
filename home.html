@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="static/css/cover.css">
     <link rel="icon" href="static/assets/profile.png">
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark no-overflow">
+<body class="d-flex h-100 text-center text-white bg-dark">
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -68,35 +68,46 @@
 
     <!-- MAIN -->
     <section id="archivoNarrow" class="hidden-content">
-        <div class="container-fluid">
-            <div class="row projects justify-content-lg-center">
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem; height: 22rem">
-                        <a href="projects/endlessnight.html" class="no-underline"><img src="static/assets/endlessnightss.png" class="card-img-top " alt="Endless Night"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Endless Night</b></h5>
-                            <p class="card-text">is a 2D fantasy RPG, in which you are tasked with saving a kingdom from dark forces.</p>
-                            <a href="projects/endlessnight.html" class="btn btn-secondary d-grid text-azure">View Project</a>
+        <div class="container px-4 py-5" id="custom-cards">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/endlessnight.html'" style="background-image: url('static/assets/endlessnightss.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold user-select-none">Endless Night</h2>
+                            <p class="card-text user-select-none">is a 2D fantasy RPG, in which you are tasked with saving a kingdom from dark forces.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem; height: 22rem">
-                    <a href="projects/legendsofaitera.html" class="no-underline"><img src="static/assets/LOA_Transparent.png" class="card-img-top " alt="Legends of Aitera"></a>
-                    <div class="card-body">
-                            <h5 class="card-title"><b>Legends of Aitera</b></h5>
-                            <p class="card-text">is a MMORPG, which is made to address multiple problems within its genre.</p>
-                            <a href="projects/legendsofaitera.html" class="btn btn-secondary d-grid">View Project</a>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/legendsofaitera.html'" style="background-image: url('static/assets/loass.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold user-select-none">Legends of Aitera</h2>
+                            <p class="card-text user-select-none">is a MMORPG, which is made to address multiple problems within its genre.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem; height: 22rem">
-                        <a href="projects/marcus.html" class="no-underline"><img src="static/assets/placeholder.png" class="card-img-top " alt="Marcus Voice Assistant"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Marcus</b> Voice Assistant</h5>
-                            <p class="card-text">is a Voice activated AI assistant, which uses tools from Microsoft Azure as well as OpenAI.</p>
-                            <a href="projects/marcus.html" class="btn btn-secondary d-grid">View Project</a>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/marcus.html'" style="background-image: url(''); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold user-select-none">Marcus Voice Assistant</h2>
+                            <p class="card-text user-select-none">is a Voice activated AI assistant, which uses tools from Microsoft Azure as well as OpenAI.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -130,14 +141,13 @@
             const learnMoreButton = document.querySelector('.btn.btn-lg.btn-secondary');
             const coverContainer = document.querySelector('.cover-container');
             const hiddenContent = document.querySelector('#archivoNarrow');
-            const body = document.querySelector('body');
-        
+
             learnMoreButton.addEventListener('click', function() {
                 coverContainer.classList.add('slide-up');
+                hiddenContent.style = 'display: block;';
                 setTimeout(() => {
                     coverContainer.classList.add('hidden-content');
                     hiddenContent.classList.add('show');
-                    body.classList.remove('no-overflow');
                 }, 1000); // Wait for the slide-up transition to complete
             });
         });
