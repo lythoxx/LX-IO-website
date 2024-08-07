@@ -40,7 +40,8 @@ a {
 }
 
 .activeCustom {
-    border-bottom: 1px solid currentColor;
+    border-bottom: 1px solid currentColor !important;
+    border-radius: 0 !important;
 }
 
 .logoCustom {
@@ -63,7 +64,6 @@ a {
 #footer {
     margin-top: auto;
     color: azure;
-    background-color: #1E2124;
 }
 
 .footerItemsCustom {
@@ -218,4 +218,39 @@ img.page-body {
 ::-webkit-scrollbar-track {
     background: #2c3033; /* Example track color */
     border-radius: 10px;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.cover-container {
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+
+.cover-container.slide-up {
+    width: 100%;
+    transform: translateX(-200%);
+}
+
+.hidden-content {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.hidden-content.show {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: auto;
+}
+
+.cover-container.hidden-content {
+    position:absolute;
 }

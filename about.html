@@ -14,43 +14,33 @@
     <script src="https://kit.fontawesome.com/cb172610ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="icon" href="static/assets/profile.png">
+    <link rel="stylesheet" href="static/css/cover.css">
 </head>
-<body>
-    <!-- NAVBAR -->
-    <section id="navbar">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img class="logoCustom" src="static/assets/vector/default-monochrome-white.svg"
-                    alt="LX-IO Logo" class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li id="homeli" class="nav-item">
-                            <a id="archivoNarrow" class="nav-link h2 hometab" href="home.html">Home</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a id="archivoNarrow" class="nav-link h2 devtab" href="development.html">Development</a>
-                        </li> -->
-                        <!-- *Dropdown menu -->
-                        <li class="nav-item dropdown">
-                            <a id="archivoNarrow" class="nav-link h2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="projects/endlessnight.html">Endless Night</a></li>
-                                <li><a class="dropdown-item" href="projects/legendsofaitera.html">Legends of Aitera</a></li>
-                                <li><a class="dropdown-item" href="projects/marcus.html">Marcus Voice Assistant</a></li>
-                            </ul>
-                        </li>
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img class="logoCustom" src="static/assets/vector/default-monochrome-white.svg"
+                    alt="LX-IO Logo" class="d-inline-block align-text-top">
+                <!-- <span class="fs-4">Simple header</span> -->
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link activeCustom">About</a></li>
+                <li class="nav-item dropdown">
+                    <a id="archivoNarrow" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="projects/endlessnight.html">Endless Night</a></li>
+                        <li><a class="dropdown-item" href="projects/legendsofaitera.html">Legends of Aitera</a></li>
+                        <li><a class="dropdown-item" href="projects/marcus.html">Marcus Voice Assistant</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+                </li>
+            </ul>
+        </header>
+    </div>
 
     <!-- MAIN -->
     <section id="archivoNarrow">
@@ -66,6 +56,7 @@
                             <p class="lead">Besides programming, I also find joy in cooking and making music. I especially enjoy the Asian cuisine and playing guitar.</p>
                         </div>
                     </div>
+                    <a href="contact.html" class="btn btn-secondary">Contact me</a>
                 </div>
             </div>
         </div>
@@ -79,28 +70,18 @@
 ███████╗██╔╝ ██╗     ██║╚██████╔╝
 ╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝ 
 -->
+    <div class="container" id="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted user-select-none">&copy; LX-IO 2024</span>
+            </div>
 
-    <!-- FOOTER -->
-    <section id="footer">
-        <div class="container-fluid">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-1">
-                <ul class="nav col-lg-3 justify-content-end socialLinksMargin">
-                    <!-- <li class="ms-3"><a title="Discord" href="#" target="_blank" class="footerItemsCustom socialLink">
-                        <img id="socialLink" src="#">
-                    </a></li> -->
-                    <li class="ms-3"><a title="YouTube" href="https://www.youtube.com/channel/UCpkiASKEF8Nty5xQutMnAIw" class="footerItemsCustom socialLink" target="_blank">
-                        <img id="socialLink" src="static/assets/youtubeLogo.png">
-                    </a></li>
-                </ul>
-                <ol class="nav col-lg-12 col-md-6">
-                    <li class="me-3"><a id="archivoNarrow" class="footerItemsCustom text-link activeCustom" href="#">About</a></li>
-                    <li class="me-3"><a id="archivoNarrow" class="footerItemsCustom text-link" href="contact.html">Contact</a></li>
-                </ol>
-                <div class="col-md-4 d-flex align-items-center">
-                    <span>© LX-IO 2024</span>
-                </div>
-            </footer>
-        </div>
-    </section>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a title="YouTube" href="https://www.youtube.com/channel/UCpkiASKEF8Nty5xQutMnAIw" class="footerItemsCustom socialLink" target="_blank">
+                    <img id="socialLink" src="static/assets/youtubeLogo.png">
+                </a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

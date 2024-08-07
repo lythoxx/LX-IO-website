@@ -13,43 +13,33 @@
     <script src="https://kit.fontawesome.com/cb172610ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../static/css/index.css">
     <link rel="icon" href="../static/assets/moon.png">
+    <link rel="stylesheet" href="../static/css/cover.css">
 </head>
-<body>
-    <!-- NAVBAR -->
-    <section id="navbar">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../home.html"><img class="logoCustom" src="../static/assets/vector/default-monochrome-white.svg"
-                    alt="LX-IO Logo" class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li id="homeli" class="nav-item">
-                            <a id="archivoNarrow" class="nav-link h2 hometab" href="../home.html">Home</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a id="archivoNarrow" class="nav-link h2 devtab" href="../development.html">Development</a>
-                        </li> -->
-                        <!-- *Dropdown menu -->
-                        <li class="nav-item dropdown">
-                            <a id="archivoNarrow" class="nav-link h2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item activeCustom" href="#">Endless Night</a></li>
-                                <li><a class="dropdown-item" href="legendsofaitera.html">Legends of Aitera</a></li>
-                                <li><a class="dropdown-item" href="marcus.html">Marcus Voice Assistant</a></li>
-                            </ul>
-                        </li>
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img class="logoCustom" src="../static/assets/vector/default-monochrome-white.svg"
+                    alt="LX-IO Logo" class="d-inline-block align-text-top">
+                <!-- <span class="fs-4">Simple header</span> -->
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-item dropdown">
+                    <a id="archivoNarrow" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item activeCustom" href="#">Endless Night</a></li>
+                        <li><a class="dropdown-item" href="legendsofaitera.html">Legends of Aitera</a></li>
+                        <li><a class="dropdown-item" href="marcus.html">Marcus Voice Assistant</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+                </li>
+            </ul>
+        </header>
+    </div>
 
     <!-- MAIN -->
     <section id="archivoNarrow">
@@ -81,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="godot" aria-labelledby="godotLabel">
+        <div class="offcanvas offcanvas-start text-start" tabindex="-1" id="godot" aria-labelledby="godotLabel">
             <div class="offcanvas-header">
                 <h3 class="offcanvas-title" id="godotLabel">Godot</h3>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -109,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="celeste" aria-labelledby="celesteLabel">
+        <div class="offcanvas offcanvas-start text-start" tabindex="-1" id="celeste" aria-labelledby="celesteLabel">
             <div class="offcanvas-header">
                 <h3 class="offcanvas-title" id="celesteLabel">Celeste</h3>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -143,28 +133,19 @@
 ███████╗██╔╝ ██╗     ██║╚██████╔╝
 ╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝ 
 -->
-    <!-- FOOTER -->
-    <section id="footer">
-        <div class="container-fluid">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-1">
-                <ul class="nav col-lg-3 justify-content-end socialLinksMargin">
-                    <!-- <li class="ms-3"><a title="Discord" href="#" target="_blank" class="footerItemsCustom socialLink">
-                        <img id="socialLink" src="#">
-                    </a></li> -->
-                    <li class="ms-3"><a title="YouTube" href="https://www.youtube.com/channel/UCpkiASKEF8Nty5xQutMnAIw" class="footerItemsCustom socialLink" target="_blank">
-                        <img id="socialLink" src="../static/assets/youtubeLogo.png">
-                    </a></li>
-                </ul>
-                <ol class="nav col-lg-12 col-md-6">
-                    <li class="me-3"><a id="archivoNarrow" class="footerItemsCustom text-link abouttab" href="../about.html">About</a></li>
-                    <li class="me-3"><a id="archivoNarrow" class="footerItemsCustom text-link contacttab" href="../contact.html">Contact</a></li>
-                </ol>
-                <div class="col-md-4 d-flex align-items-center">
-                    <span>© LX-IO 2024</span>
-                </div>
-            </footer>
-        </div>
-    </section>
+    <div class="container" id="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted user-select-none">&copy; LX-IO 2024</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a title="YouTube" href="https://www.youtube.com/channel/UCpkiASKEF8Nty5xQutMnAIw" class="footerItemsCustom socialLink" target="_blank">
+                    <img id="socialLink" src="../static/assets/youtubeLogo.png">
+                </a></li>
+            </ul>
+        </footer>
+    </div>
     <script src="../static/js/zoom.js"></script>
     <script>
         document.querySelector( '.page-body' ).addEventListener( 'click', function( event ) {
