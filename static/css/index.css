@@ -133,12 +133,12 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
 }
 
 /* DROPDOWN */
-.dropdown-menu {
-    background-color: #2c3033;
+.dropdown-menu, .search-form {
+    background-color: #2c3033 !important;
 }
 
 .dropdown-item:hover {
-    background-color: #2c3033;
+    background-color: #2c3033 !important;
 }
 
 .dropdown-item,
@@ -146,6 +146,20 @@ a:not(.dropdown-toggle, .socialLink, .forum-link):hover:after {
     color: azure;
 }
 
+.search-control {
+    background-color: #2c3033;
+    color: azure;
+    border: none;
+    border-bottom: 1px solid azure;
+    border-radius: 0%;
+}
+
+.search-control:focus {
+    background-color: #3e4245;
+    color: azure;
+    outline: none !important;
+    box-shadow: none !important;
+}
 
 .inline-link {
     color: rgb(180, 190, 233);
