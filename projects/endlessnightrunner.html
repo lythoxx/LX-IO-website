@@ -90,7 +90,6 @@
                             <hr>
                             <div class="ratio ratio-16x9">
                                 <iframe id="runner" class="desktop" frameborder="0" src="https://itch.io/embed-upload/11175078?color=333333" allowfullscreen=""></iframe>
-                                <p id="notPublishedErr" class="text-danger" style="display: none;">The game is not published yet. Please check back later. Once published, you can play the game here.</p>
                                 <p class="mobile text-danger">The game is not optmized for mobile. It might have game breaking bugs. If you still want to play, you can do so here: <a class="btn btn-secondary fw-bold" href="https://lx-io.itch.io/Endless-Night-Runner" target="_blank">Play on itch.io</a></p>
                             </div>
                         </div>
@@ -162,35 +161,6 @@
         </footer>
     </div>
     <script>
-        // Function to check if the game is available
-        function checkGameAvailability() {
-            const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-            const targetUrl = 'lx-io.itch.io/endless-night-runner';
-
-            fetch(corsProxy + targetUrl, {
-                method: 'GET'
-            })
-            .then(response => {
-                if (response.status === 404) {
-                    console.log('Game not published yet');
-                    document.getElementById('notPublishedErr').style.display = 'block';
-                    document.getElementById('runner').style.display = 'none';
-                    document.querySelector('.mobile').style.display = 'none';
-                }
-            })
-            .catch(error => {
-                console.error('Error checking game availability:', error);
-                document.getElementById('notPublishedErr').style.display = 'block';
-                document.getElementById('runner').style.display = 'none';
-                document.querySelector('.mobile').style.display = 'none';
-            });
-        }
-
-        // Check game availability on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            checkGameAvailability();
-        });
-
         function isMobile() {
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         }
