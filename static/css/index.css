@@ -211,6 +211,7 @@ img.page-body {
     overflow: hidden;
 }
 
+@media (prefers-reduced-motion: no-preference) {
 .cover-container {
     position: relative;
         will-change: transform;
@@ -220,6 +221,19 @@ img.page-body {
 .cover-container.slide-up {
     width: 100%;
     transform: translateX(-250%);
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cover-container {
+        position: relative;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .cover-container.slide-up {
+        width: 100%;
+        opacity: 0;
+    }
 }
 
 .hidden-content {
