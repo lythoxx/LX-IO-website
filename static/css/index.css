@@ -212,16 +212,16 @@ img.page-body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-.cover-container {
-    position: relative;
+    .cover-container {
+        position: relative;
         will-change: transform;
-    transition: transform 1s ease-in-out;
-}
+        transition: transform 1s ease-in-out;
+    }
 
-.cover-container.slide-up {
-    width: 100%;
-    transform: translateX(-250%);
-}
+    .cover-container.slide-up {
+        width: 100%;
+        transform: translateX(-250%);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
