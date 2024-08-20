@@ -313,3 +313,8 @@ img.page-body {
     box-shadow: 0 0 0 0 currentColor;
     outline: 0;
 }
+
+.dropdown-menu {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
