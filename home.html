@@ -11,7 +11,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="static/js/index.js" defer></script>
+    <script src="/static/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/cb172610ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/cover.css">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/static/css/lightmode.css">
     <script src="/static/js/lightmode.js" defer></script>
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex h-100 text-center text-white bg-dark"> <!-- TODO ADD A LIGHTMODE CLASS HERE -->
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none navbar-brand">
@@ -30,7 +30,7 @@
             </a>
             <ul class="nav nav-pills">
                 <li class="nav-item"><a class="nav-link hometab activeCustom" href="#">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         Projects
@@ -41,32 +41,32 @@
                         </form>
                         <ul class="list-unstyled mb-0">
                             <li class="dropdown-list-item">
-                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="projects/endlessnight.html">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/endlessnight.html">
                                     <i class="bi bi-controller"></i>
                                     Endless Night
                                 </a>
                             </li>
                             <li class="dropdown-list-item">
-                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="projects/legendsofaitera.html">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/legendsofaitera.html">
                                     <i class="bi bi-joystick"></i>
                                     Legends of Aitera
                                 </a>
                             </li>
                             <li class="dropdown-list-item">
-                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="projects/marcus.html">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/marcus.html">
                                     <i class="bi bi-braces"></i>
                                     Marcus Voice Assistant
                                 </a>
                             </li>
                             <li class="dropdown-list-item" style="display: none">
-                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="projects/endlessnightrunner.html">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/endlessnightrunner.html">
                                     <i class="bi bi-person-walking"></i>
                                     Endless Night: Runner
                                 </a>
                             </li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="projects/all.html">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/all.html">
                                     <i class="bi bi-asterisk"></i>
                                     All Projects
                                 </a>
@@ -109,13 +109,13 @@
             <h2><u>Featured Projects</u></h2>
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/endlessnight.html'" style="background-image: url('static/assets/endlessnightss.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/endlessnight.html'" style="background-image: url('/static/assets/endlessnightss.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold user-select-none">Endless Night</h2>
                             <p class="card-text user-select-none">is a 2D fantasy RPG, in which you are tasked with saving a kingdom from dark forces.</p>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <img src="static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
+                                    <img src="/static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
                                 </li>
                             </ul>
                         </div>
@@ -123,13 +123,13 @@
                 </div>
 
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/legendsofaitera.html'" style="background-image: url('static/assets/loass.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" onclick="window.location.href='/projects/legendsofaitera.html'" style="background-image: url('/static/assets/loass.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold user-select-none">Legends of Aitera</h2>
                             <p class="card-text user-select-none">is a MMORPG, which is made to address multiple problems within its genre.</p>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <img src="static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
+                                    <img src="/static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
                                 </li>
                             </ul>
                         </div>
@@ -143,7 +143,7 @@
                             <p class="card-text user-select-none">is a Voice activated AI assistant, which uses tools from Microsoft Azure as well as OpenAI.</p>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <img src="static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
+                                    <img src="/static/assets/profile.png" alt="LX-IO" width="32" height="32" class="rounded-circle border border-white card-icon">
                                 </li>
                             </ul>
                         </div>
@@ -170,7 +170,7 @@
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><a title="YouTube" href="https://www.youtube.com/channel/UCpkiASKEF8Nty5xQutMnAIw" class="footerItemsCustom socialLink" target="_blank">
-                    <img id="socialLink" src="static/assets/youtubeLogo.png">
+                    <img id="socialLink" src="/static/assets/youtubeLogo.png">
                 </a></li>
             </ul>
         </footer>
@@ -180,7 +180,7 @@
             const learnMoreButton = document.querySelector('.btn.btn-lg.btn-secondary');
             const coverContainer = document.querySelector('.cover-container');
             const hiddenContent = document.querySelector('#archivoNarrow');
-            const body = document.querySelector("body")
+            const body = document.querySelector("body");
 
             learnMoreButton.addEventListener('click', function() {
                 coverContainer.classList.add('slide-up');
