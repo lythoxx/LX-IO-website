@@ -65,3 +65,7 @@ body.lightmode::-webkit-scrollbar-track {
     background: #c4b9b9; /* Example track color */
     border-radius: 0;
 }
+
+body.lightmode .modal-content {
+    background-color: #f8f9fa;
+}

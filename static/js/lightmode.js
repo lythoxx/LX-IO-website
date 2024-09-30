@@ -24,6 +24,13 @@ function getCookie(name) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    if (getCookie("cookieconsent") === "") {
+        console.log("Cookie consent not set, displaying cookie consent banner");
+        var modal = new bootstrap.Modal(document.getElementById("cookieModal"), {
+            keyboard: false
+        });
+        modal.show();
+    }
     // Check cookie and set initial mode
     if (getCookie("lightmode") === "enabled") {
         document.body.classList.add("lightmode");

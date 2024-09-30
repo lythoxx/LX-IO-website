@@ -4,6 +4,10 @@ body {
     max-width: 100%;
 }
 
+.modal-content {
+    background-color: #2c3033;
+}
+
 a {
     cursor: pointer;
 }

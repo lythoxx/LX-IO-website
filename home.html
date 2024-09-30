@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/static/css/lightmode.css">
     <script src="/static/js/lightmode.js" defer></script>
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark"> <!-- TODO ADD A LIGHTMODE CLASS HERE -->
+<body class="d-flex h-100 text-center text-white bg-dark">
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none navbar-brand">
@@ -76,6 +76,23 @@
                 </li>
             </ul>
         </header>
+    </div>
+
+    <!-- Modal for cookies -->
+    <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookieModalLabel">Cookie Notice</h5>
+                </div>
+                <div class="modal-body">
+                    This website uses cookies to ensure you get the best experience on our website. We do not collect any personal data. Neither do we use cookies for tracking purposes or advertisements. Cookies are used to save your preferences and settings. By clicking "Ok" you agree to the use of cookies.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setCookie('cookieconsent', 'accepted', 30)">Ok</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
