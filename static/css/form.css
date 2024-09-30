@@ -18,7 +18,7 @@ label {
 }
 
 @media screen and (orientation: landscape) {
-    form {
+    form:not(.search-form) {
         width: 50%;
         /* Center the form */
         margin: 0 auto;
@@ -26,7 +26,7 @@ label {
 }
 
 @media screen and (orientation: portrait) {
-    form {
+    form:not(.search-form) {
         width: 100%;
         /* Center the form */
         margin: 0 auto;

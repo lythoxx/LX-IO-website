@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LX-IO | Endless Night: Runner</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/cb172610ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" href="/static/assets/profile.png">
+    <link rel="stylesheet" href="/static/css/cover.css">
+    <script src="/static/js/dropdown.js" defer></script>
+    <link rel="stylesheet" href="/static/css/lightmode.css">
+    <script src="/static/js/lightmode.js" defer></script>
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none navbar-brand">
+                <img class="logoCustom" src="/static/assets/vector/default-monochrome-white.svg"
+                    alt="LX-IO Logo" class="d-inline-block align-text-top">
+                <!-- <span class="fs-4">Simple header</span> -->
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle activeCustom" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-dark border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden" style="width: 280px;">
+                        <form class="p-2 mb-2 bg-dark border-bottom border-dark search-form">
+                            <input type="search" class="form-control form-control-dark search-control" autocomplete="false" placeholder="Type to filter...">
+                        </form>
+                        <ul class="list-unstyled mb-0">
+                            <li class="dropdown-list-item">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/endlessnight.html">
+                                    <i class="bi bi-controller"></i>
+                                    Endless Night
+                                </a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/legendsofaitera.html">
+                                    <i class="bi bi-joystick"></i>
+                                    Legends of Aitera
+                                </a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/marcus.html">
+                                    <i class="bi bi-braces"></i>
+                                    Marcus Voice Assistant
+                                </a>
+                            </li>
+                            <li class="dropdown-list-item" style="display: none">
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <i class="bi bi-person-walking"></i>
+                                    Endless Night: Runner
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/projects/all.html">
+                                    <i class="bi bi-asterisk"></i>
+                                    All Projects
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- MAIN -->
+    <section id="archivoNarrow">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Endless Night: Runner</h1>
+                            <p class="lead">Endless Night: Runner is a 2D Jump 'n Run made in <a class="inline-link" data-bs-toggle="offcanvas" href="#godot" role="button" aria-controls="godot">Godot</a>.</p>
+                            <p class="lead">The game is based on the concept behind the <a class="inline-link" data-bs-toggle="offcanvas" href="#dino" role="button" aria-controls="dino">Google Chrome Dinosaur Game</a> and uses the visual style of <a class="inline-link" href="/projects/endlessnight.html">Endless Night</a>.</p>
+                            <p class="lead">It is made as a study on infinite games.</p>
+                            <hr>
+                            <div class="ratio ratio-16x9">
+                                <iframe id="runner" class="desktop" frameborder="0" src="https://itch.io/embed-upload/11244702?color=333333" allowfullscreen=""></iframe>
+                                <p class="mobile text-danger">The game is not optmized for mobile. It might have game breaking bugs. If you still want to play, you can do so here: <a class="btn btn-secondary fw-bold" href="https://lx-io.itch.io/Endless-Night-Runner" target="_blank">Play on itch.io</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start text-start" tabindex="-1" id="godot" aria-labelledby="godotLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="godotLabel">Godot</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="lead">Godot is a lightweight, free and open-source game engine.</p>
+                    <hr>
+                    <ul>
+                        <li>Innovative Design</li>
+                            <ul><li>Godot's Node and Scene system gives you both power and flexibility to create anything.</li></ul>
+                            <li>Use the right language for the job</li>
+                            <ul><li>Keep your code modular with an object-oriented API using Godot's own GDScript, C#, C++, or bring your own using GDExtension.</li></ul>
+                            <li>Dedicated 2D engine</li>
+                            <ul><li>Make crisp and performant 2D games with Godot's dedicated 2D rendering engine with real 2D pixel coordinates and 2D nodes.</li></ul>
+                        <li>Simple and powerful 3D</li>
+                            <ul><li>Godot's 3D nodes give you everything you need to build, animate, and render your 3D worlds and characters.</li></ul>
+                            <li>Release on all platforms</li>
+                            <ul><li>Deploy your game on desktop, mobile, and the web in seconds. Godot even supports consoles through third party publishers.</li></ul>
+                        <li>Open Source</li>
+                            <ul><li>Truly open development: anyone who contributes to Godot benefits equally from others' contributions.</li></ul>
+                        </ul>
+                    <hr>
+                    <a href="https://godotengine.org" target="_blank" class="btn btn-secondary fw-bold">Godot Website</a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start text-start" tabindex="-1" id="dino" aria-labelledby="dinoLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="dinoLabel">Google Chrome Dinosaur Game</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="lead">The Dinosaur Game (also known as the Chrome Dino) is a browser game developed by Google and built into the Google Chrome web browser. The player guides a pixelated t-rex across a side-scrolling landscape, avoiding obstacles to achieve a higher score. The game was created by members of the Chrome UX team in 2014.</p>
+                    <hr>
+                    <a href="https://chromedino.com" style="margin: 5px 5px 5px 0px;" target="_blank" class="btn btn-secondary fw-bold">Play a replica</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+██╗     ██╗  ██╗     ██╗ ██████╗
+██║     ╚██╗██╔╝     ██║██╔═══██╗
+██║      ╚███╔╝█████╗██║██║   ██║
+██║      ██╔██╗╚════╝██║██║   ██║
+███████╗██╔╝ ██╗     ██║╚██████╔╝
+╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝
+-->
+    <div class="container" id="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted user-select-none copyright">&copy; LX-IO 2024</span>
+                <i class="bi bi-moon ms-3" id="darkmodetoggle"></i>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a title="YouTube" href="https://www.youtube.com/channel/UCpkiASKEF8Nty5xQutMnAIw" class="footerItemsCustom socialLink" target="_blank">
+                    <img id="socialLink" src="/static/assets/youtubeLogo.png">
+                </a></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        if (isMobile()) {
+            document.querySelector('.desktop').style.display = 'none';
+            document.querySelector('.mobile').style.display = 'block';
+        } else {
+            document.querySelector('.desktop').style.display = 'block';
+            document.querySelector('.mobile').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+</html>
