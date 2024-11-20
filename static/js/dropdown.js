@@ -7,6 +7,7 @@ inputField.addEventListener('input', (event) => {
         if (!item.children[0].childNodes[2].textContent.toLowerCase().includes(event.target.value.toLowerCase())) {
             item.style = 'display: none;'
         } else {
+            console.log(item.children[0].childNodes[2].textContent.toLowerCase())
             item.style = 'display: block;'
         }
     }
@@ -16,3 +17,11 @@ inputField.addEventListener('input', (event) => {
         }
     }
 })
+
+function search() {
+    alert('search');
+    const content = inputField.value;
+    alert(content);
+    var redirect = '/projects/search?content=' + content;
+    window.location.href = redirect;
+}
