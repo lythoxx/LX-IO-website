@@ -36,7 +36,7 @@
                         Projects
                     </a>
                     <div class="dropdown-menu dropdown-menu-dark border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden" style="width: 280px;">
-                        <form class="p-2 mb-2 bg-dark border-bottom border-dark search-form" onsubmit="search()">
+                        <form class="p-2 mb-2 bg-dark border-bottom border-dark search-form">
                             <input type="search" class="form-control form-control-dark search-control" autocomplete="false" placeholder="Type to filter...">
                         </form>
                         <ul class="list-unstyled mb-0">
@@ -153,8 +153,10 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
                 </div>
             </div>
+            <a href="/projects/all.html" class="btn btn-lg btn-secondary fw-bold">View all projects</a>
         </div>
     </section>
 <!--
@@ -184,8 +186,8 @@
             // Get the content from the URL
             var url = new URL(window.location.href);
             const resultHeader = document.getElementById('result-header')
-            resultHeader.innerHTML = `<u>Results for: ${url.searchParams.get("content")}</u>`
             var search = url.searchParams.get("content");
+            resultHeader.innerHTML = `<u>We could not find results for: ${search}</u>`
             const dropdownValues = document.getElementsByClassName('dropdown-list-item')
             for (let item of dropdownValues) {
                 if (!item.children[0].childNodes[2].textContent.toLowerCase().includes(search.toLowerCase())) {
@@ -205,6 +207,7 @@
                             document.getElementsByClassName("runner")[0].style.display = "block"
                             break
                     }
+                    resultHeader.innerHTML = `<u>Results for: ${search}</u>`
                 }
             }
         })
