@@ -110,10 +110,63 @@
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
                             <h1 class="display-4">Ghost Notes</h1>
-                            <p class="lead">Ghost Notes is a rhythm game which mainly utilizes MIDI input instead of traditional keyboard/mouse inputs. In this game you actually play the music by reading it from the notation and playing it on a MIDI controller. If you don't have a MIDI controller, you can also use your normal keyboard to play the game.</p>
+                            <p class="lead">Ghost Notes is a rhythm game which mainly utilizes <a class="inline-link" data-bs-toggle="offcanvas" href="#midi" role="button" aria-controls="midi">MIDI</a> input instead of traditional keyboard/mouse inputs. In this game you actually play the music by reading it from the notation and playing it on a <a class="inline-link" data-bs-toggle="offcanvas" href="#midi" role="button" aria-controls="midi">MIDI</a> controller. If you don't have a <a class="inline-link" data-bs-toggle="offcanvas" href="#midi" role="button" aria-controls="midi">MIDI</a> controller, you can also use your normal keyboard to play the game.</p>
+                            <hr>
                             <p class="lead">The game is not without a story: In Ghost Notes, you play as a ghost hunter which specializes in the ghosts of late musicians who are bound to the realm of the living by their deep rooted desire to have their music heard one last time.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start text-start" tabindex="-1" id="midi" aria-labelledby="midiLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="midi">MIDI</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="lead">MIDI is short for <code>Musical Instrument Digital Interface</code>. It's an interface to allow instruments to communicate with computers directly.</p>
+                    <hr>
+                    <p>Why MIDI?</p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Connectivity
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    MIDI allows for direct connection between the instrument and the computer.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Playing with the CPU
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    MIDI sends data directly to the CPU and tells it exactly at which point, which instrument should play which pitch.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Easy to use
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    MIDI is based on events like <code>NOTE_ON</code> to communicate with the system. Using the events and set numbers for the pitches it makes it easy to quickly use MIDI.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://midi.org" target="_blank" class="btn btn-secondary fw-bold">Visit the MIDI Association</a>
                 </div>
             </div>
         </div>
