@@ -37,11 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("darkmodetoggle").classList.add("bi-sun");
         document.getElementById("darkmodetoggle").classList.remove("bi-moon");
         document.getElementsByClassName("logoCustom")[0].src = "/static/assets/vector/default-monochrome-black.svg";
+        document.getElementsByClassName("github")[0].src = "/static/assets/github-mark/github-mark.svg";
     } else {
         document.body.classList.remove("lightmode");
         document.getElementById("darkmodetoggle").classList.add("bi-moon");
         document.getElementById("darkmodetoggle").classList.remove("bi-sun");
         document.getElementsByClassName("logoCustom")[0].src = "/static/assets/vector/default-monochrome-white.svg";
+        document.getElementsByClassName("github")[0].src = "/static/assets/github-mark/github-mark-white.svg";
     }
 });
 
@@ -69,12 +71,14 @@ document.getElementById("darkmodetoggle").addEventListener("click", function() {
         document.getElementById("darkmodetoggle").classList.add("bi-moon-fill");
         document.getElementById("darkmodetoggle").classList.remove("bi-sun-fill");
         document.getElementsByClassName("logoCustom")[0].src = "/static/assets/vector/default-monochrome-white.svg";
+        document.getElementsByClassName("github")[0].src = "/static/assets/github-mark/github-mark-white.svg";
         setCookie("lightmode", "disabled", 30);
     } else {
         document.body.classList.add("lightmode");
         document.getElementById("darkmodetoggle").classList.add("bi-sun-fill");
         document.getElementById("darkmodetoggle").classList.remove("bi-moon-fill");
         document.getElementsByClassName("logoCustom")[0].src = "/static/assets/vector/default-monochrome-black.svg";
+        document.getElementsByClassName("github")[0].src = "/static/assets/github-mark/github-mark.svg";
         setCookie("lightmode", "enabled", 30);
     }
 });
