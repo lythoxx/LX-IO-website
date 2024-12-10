@@ -213,9 +213,16 @@
             const parts = value.split(`; ${name}=`);
             if (parts.length === 2) return parts.pop().split(';').shift();
                 return null;
-        }       
+        }
 
         document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth < 992) {
+                document.getElementById('navbarSupportedContent').classList.remove('justify-content-end');
+                document.getElementById('navbarSupportedContent').classList.add('justify-content-center');
+            } else {
+                document.getElementById('navbarSupportedContent').classList.remove('justify-content-center');
+                document.getElementById('navbarSupportedContent').classList.add('justify-content-end');
+            }
             const learnMoreButton = document.querySelector('.btn.btn-lg.btn-secondary');
             const coverContainer = document.querySelector('.cover-container');
             const hiddenContent = document.querySelector('#archivoNarrow');
